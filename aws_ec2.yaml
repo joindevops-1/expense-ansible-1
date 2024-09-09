@@ -4,5 +4,7 @@ regions:
 filters:
   tag:Name: "backend"   # Replace with your specific tag
   instance-state-name: running
+hostnames:
+  - private-ip-address
 compose:
   ansible_host: private-ip-address
