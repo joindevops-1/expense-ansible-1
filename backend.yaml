@@ -1,6 +1,6 @@
 - name: configure backend server
   become: yes
-  hosts: backend
+  hosts: all
   vars:
     login_host: mysql.daws81s.online
     login_password: ExpenseApp@1
