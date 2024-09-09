@@ -1,0 +1,8 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1   # Change this to your region
+filters:
+  tag:Name: "backend"   # Replace with your specific tag
+  instance-state-name: running
+compose:
+  ansible_host: private-ip-address
